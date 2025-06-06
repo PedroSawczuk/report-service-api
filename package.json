@@ -4,13 +4,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "knex": "tsx ./node_modules/knex/bin/cli.js"  
+    "knex": "tsx ./node_modules/knex/bin/cli.js"
   },
   "keywords": [],
   "author": "pedrosawczuk",
   "license": "MIT",
   "description": "Uma API para geração de relatórios em PDF e Excel",
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
     "dotenv": "^16.5.0",
     "fastify": "^5.3.3",
     "knex": "^3.1.0",
@@ -19,6 +20,8 @@
     "zod": "^3.25.55"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30"
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.15.30",
+    "eslint": "^8.57.1"
   }
 }
